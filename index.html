@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lost Treasure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #222;
+            background-color: #f4f4f9;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1, header img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        header img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00c3ff;
+        }
+        section {
+            padding: 50px 10%;
+            text-align: center;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 10%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0 0 10px;
+        }
+        .download a {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 30px;
+            background: #00c3ff;
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.2s;
+        }
+        .download a:hover {
+            background: #007bb5;
+            transform: scale(1.05);
+        }
+        .download img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .feature-box {
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .feature-box h3 {
+            margin-bottom: 10px;
+            color: #243b55;
+        }
+        footer {
+            background-color: #141e30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #00c3ff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-size: 1.5rem;
+            display: none;
+        }
+        .back-to-top:hover {
+            background: #007bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="The Lost Treasure game logo with a gaming theme.png" alt="The Lost Treasure Logo">
+        <h1>The Lost Treasure</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gameplay">Gameplay</a>
+            <a href="#download">Download</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About The Game</h2>
+        <p>Embark on an epic 2D adventure through mysterious mansions and dangerous dungeons in search of hidden treasures. Solve puzzles, face challenges, and uncover the secrets of The Lost Treasure!</p>
+    </section>
+
+    <section id="gameplay" class="hero">
+        <h2>Gameplay Preview</h2>
+        <p>Immerse yourself in breathtaking exploration and thrilling quests.</p>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Immersive Storyline</h3>
+                <p>Experience a captivating narrative with twists and turns.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Challenging Puzzles</h3>
+                <p>Test your wits with a variety of unique and engaging puzzles.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Beautiful Graphics</h3>
+                <p>Explore stunning 2D visuals crafted with care.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Download The Lost Treasure</h2>
+        <a href="https://drive.google.com/uc?export=download&id=1edznjL-Kc6TYRdP27On1OeafavL1oOV1" download>
+            <img src="windows.png" alt="Windows"> Download for Windows
+        </a>
+        <a href="#" onclick="alert('The Mac version is not available yet. Stay tuned!')">
+            <img src="mac.jpeg" alt="Mac"> Download for Mac
+        </a>
+        <a href="#" onclick="alert('The Linux version is not available yet. Stay tuned!')">
+            <img src="linux.png" alt="Linux"> Download for Linux
+        </a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Share your feedback, suggestions, or questions at contactthelosttreasur@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Lost Treasure. All rights reserved. | Designed with ❤️ by Rayane Elkhoudari and Yanis Alami</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">↑</a>
+
+    <script>
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+
+            // Agrandissement du logo
+            const logo = document.getElementById('logo');
+            logo.style.transform = `scale(${1 + window.scrollY / 1000})`;
+        });
+
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
